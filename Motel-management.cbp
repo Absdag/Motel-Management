@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Motel-management" />
+		<Option pch_mode="2" />
+		<Option compiler="msys2-mingw-w64-xi686" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Motel-management" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="msys2-mingw-w64-xi686" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D__WXDEBUG__" />
+					<Add directory="$(#wx)/lib/gcc_lib-x86/mswud" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_lib-x86/mswud" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw32ud_webview.a" />
+					<Add library="libwxmsw32ud_stc.a" />
+					<Add library="libwxmsw32ud_propgrid.a" />
+					<Add library="libwxmsw32ud_ribbon.a" />
+					<Add library="libwxmsw32ud_richtext.a" />
+					<Add library="libwxmsw32ud_xrc.a" />
+					<Add library="libwxmsw32ud_aui.a" />
+					<Add library="libwxmsw32ud_media.a" />
+					<Add library="libwxbase32ud_net.a" />
+					<Add library="libwxmsw32ud_gl.a" />
+					<Add library="libwxbase32ud_xml.a" />
+					<Add library="libwxmsw32ud_adv.a" />
+					<Add library="libwxmsw32ud_html.a" />
+					<Add library="libwxmsw32ud_core.a" />
+					<Add library="libwxbase32ud.a" />
+					<Add library="libwxpngd.a" />
+					<Add library="libwxjpegd.a" />
+					<Add library="libwxtiffd.a" />
+					<Add library="libwxzlibd.a" />
+					<Add library="libwxregexud.a" />
+					<Add library="libwxscintillad.a" />
+					<Add library="libwxexpatd.a" />
+					<Add directory="$(#wx)/lib/gcc_lib-x86" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Motel-management" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="msys2-mingw-w64-xi686" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="$(#wx)/lib/gcc_lib-x86/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_lib-x86/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw32u_webview.a" />
+					<Add library="libwxmsw32u_stc.a" />
+					<Add library="libwxmsw32u_propgrid.a" />
+					<Add library="libwxmsw32u_ribbon.a" />
+					<Add library="libwxmsw32u_richtext.a" />
+					<Add library="libwxmsw32u_xrc.a" />
+					<Add library="libwxmsw32u_aui.a" />
+					<Add library="libwxmsw32u_media.a" />
+					<Add library="libwxbase32u_net.a" />
+					<Add library="libwxmsw32u_gl.a" />
+					<Add library="libwxbase32u_xml.a" />
+					<Add library="libwxmsw32u_adv.a" />
+					<Add library="libwxmsw32u_html.a" />
+					<Add library="libwxmsw32u_core.a" />
+					<Add library="libwxbase32u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxjpeg.a" />
+					<Add library="libwxtiff.a" />
+					<Add library="libwxzlib.a" />
+					<Add library="libwxregexu.a" />
+					<Add library="libwxscintilla.a" />
+					<Add library="libwxexpat.a" />
+					<Add directory="$(#wx)/lib/gcc_lib-x86" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-Wall" />
+			<Add directory="$(#wx)/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#wx)/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+			<Add library="libkernel32.a" />
+			<Add library="libuser32.a" />
+			<Add library="libgdi32.a" />
+			<Add library="libwinspool.a" />
+			<Add library="libcomdlg32.a" />
+			<Add library="libadvapi32.a" />
+			<Add library="libshell32.a" />
+			<Add library="libole32.a" />
+			<Add library="liboleaut32.a" />
+			<Add library="libuuid.a" />
+			<Add library="libcomctl32.a" />
+			<Add library="libws2_32.a" />
+			<Add library="libopengl32.a" />
+			<Add library="libshlwapi.a" />
+			<Add library="libversion.a" />
+			<Add library="liboleacc.a" />
+			<Add library="libuxtheme.a" />
+			<Add library="libimm32.a" />
+		</Linker>
+		<Unit filename="Motel_managementApp.cpp" />
+		<Unit filename="Motel_managementApp.h" />
+		<Unit filename="Motel_managementMain.cpp" />
+		<Unit filename="Motel_managementMain.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="wxsmith/Motel_managementframe.wxs" />
+		<Extensions>
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="Motel_managementApp.cpp" main="Motel_managementFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/Motel_managementframe.wxs" src="Motel_managementMain.cpp" hdr="Motel_managementMain.h" fwddecl="0" i18n="1" name="Motel_managementFrame" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
